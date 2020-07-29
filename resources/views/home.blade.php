@@ -1,54 +1,5 @@
 @extends('layouts.site')
-@section('title', 'Inicio')
 @section('body')
-
-<div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
-    
-    <!-- Loading preloader -->
-    <div class="preloader">
-      <div class="preloader-body">
-        <div class="cssload-container">
-          <div class="cssload-speeding-wheel"></div>
-        </div>
-        <p>Loading...</p>
-      </div>
-    </div>
-
-    <div class="page">
-      <!-- Page Header-->
-      <header class="section page-header">
-        <!-- RD Navbar-->
-        <div class="rd-navbar-wrap">
-          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
-            <div class="rd-navbar-main-outer">
-              <div class="rd-navbar-main">
-                <!-- RD Navbar Panel-->
-                <div class="rd-navbar-panel"> 
-                  <!-- RD Navbar Toggle-->
-                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                  <!-- RD Navbar Brand-->
-                  <div class="rd-navbar-brand"><a href="index.html"><img class="brand-logo-light" src="images/logo-default1-140x57.png" alt="" width="140" height="57" srcset="images/logo-default-280x113.png 2x"/></a></div>
-                </div>
-                <div class="rd-navbar-main-element">
-                  <div class="rd-navbar-nav-wrap">
-                    <!-- RD Navbar Nav-->
-                    <ul class="rd-navbar-nav">
-                      <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
-                      </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About</a>
-                      </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Typography</a>
-                      </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
-                      </li>
-                    </ul><a class="button button-white button-sm" href="#">book now</a>
-                  </div>
-                </div><a class="button button-white button-sm" href="#">book now</a>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </header>
 
       <!-- Swiper-->
       <section class="section section-lg section-main-bunner section-main-bunner-filter text-center">
@@ -56,9 +7,9 @@
         <div class="main-bunner-inner">
           <div class="container">
             <div class="box-default">
-              <h1 class="box-default-title">Welcome</h1>
+              <h1 class="box-default-title">Bienvenido</h1>
               <div class="box-default-decor"></div>
-              <p class="big box-default-text">Our restaurant offers full-service dining with breathtaking views seen from our indoor covered patio and our outdoor sundeck.</p>
+              <p class="big box-default-text">a la familia Z Estilistas.</p>
             </div>
           </div>
         </div>
