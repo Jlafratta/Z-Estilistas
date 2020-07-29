@@ -65,13 +65,13 @@
                   <div class="rd-navbar-nav-wrap">
                     <!-- RD Navbar Nav-->
                     <ul class="rd-navbar-nav">
-                      <li class="rd-nav-item <?php if($title =='Inicio'){echo 'active';}?>"><a class="rd-nav-link" href="{{ route('home') }}">Inicio</a>
+                      <li class="rd-nav-item <?php if($title =='Inicio'){echo 'active';}?>"><a class="rd-nav-link transicion" href="{{ route('home') }}">Inicio</a>
                       </li>
-                      <li class="rd-nav-item <?php if($title =='Quienes somos'){echo 'active';}?>"><a class="rd-nav-link" href="{{ route('about-us') }}">Quienes somos</a>
+                      <li class="rd-nav-item <?php if($title =='Quienes somos'){echo 'active';}?>"><a class="rd-nav-link transicion" href="{{ route('about-us') }}">Quienes somos</a>
                       </li>
-                      <li class="rd-nav-item <?php if($title =='Galeria'){echo 'active';}?>"><a class="rd-nav-link" href="{{ route('gallery') }}">Galeria</a>
+                      <li class="rd-nav-item <?php if($title =='Galeria'){echo 'active';}?>"><a class="rd-nav-link transicion" href="{{ route('gallery') }}">Galeria</a>
                       </li>
-                      <li class="rd-nav-item <?php if($title =='Contacto'){echo 'active';}?>"><a class="rd-nav-link" href="{{ route('contact') }}">Contacto</a>
+                      <li class="rd-nav-item <?php if($title =='Contacto'){echo 'active';}?>"><a class="rd-nav-link transicion" href="{{ route('contact') }}">Contacto</a>
                       </li>
                     </ul><a class="button button-white button-sm" href="#">Ingresar</a>
                   </div>
@@ -105,8 +105,8 @@
               <ul class="social-list">
                 <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-facebook" href="https://www.facebook.com/z.estilistas" target="_blank" rel="noopener noreferrer"></a></li>
                 <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-instagram" href="https://www.instagram.com/z.estilistas/"></a></li>
-                <li><a class="icon icon-sm icon-circle icon-circle-md icon-blue fa-facebook" href="https://www.facebook.com/z.estilistas"></a></li>
-                <li><a class="icon icon-sm icon-circle icon-circle-md icon-pink fa-instagram" href="https://www.instagram.com/z.estilistas/"></a></li>
+                {{-- <li><a class="icon icon-sm icon-circle icon-circle-md icon-blue fa-facebook" href="https://www.facebook.com/z.estilistas"></a></li>
+                <li><a class="icon icon-sm icon-circle icon-circle-md icon-pink fa-instagram" href="https://www.instagram.com/z.estilistas/"></a></li> --}}
                 {{-- <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-twitter" href="#"></a></li> --}}
                 {{-- <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-youtube-play" href="#"></a></li> --}}
                 {{-- <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-pinterest-p" href="#"></a></li> --}}
@@ -123,6 +123,23 @@
   <div class="snackbars" id="form-output-global"></div>
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
+  <script>
+  $(document).ready(function() {
+  
+    $("body").css("display", "none");
+    $("body").fadeIn(500);
+    
+  $("a.transicion").click(function(event){
+    event.preventDefault();
+    linkDestino = this.href;
+    $("body").fadeOut(500, redireccionarPag);    
+  });
+    
+  function redireccionarPag() {
+    window.location = linkDestino;
+  }
+  
+  });</script>
     
   
 </html>

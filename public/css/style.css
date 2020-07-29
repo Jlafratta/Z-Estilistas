@@ -6682,7 +6682,7 @@ html:not(.lt-ie10) .not-animated {
 	align-items: center;
 	padding: 20px;
 	background: #ffffff;
-	transition: .3s all ease;
+	transition: .1s all ease;
 }
 
 .preloader.loaded {
@@ -6709,7 +6709,7 @@ html:not(.lt-ie10) .not-animated {
 	width: 36px;
 	height: 36px;
 	margin: 0 auto;
-	border: 3px solid #41A451;
+	border: 3px solid #2884ee;
 	border-radius: 50%;
 	border-left-color: transparent;
 	border-bottom-color: transparent;
