@@ -29,6 +29,12 @@
 	border-color: #151515;
 }
 
+#resplandor {
+	-moz-box-shadow: 0px 0px 30px #ffffff;
+-webkit-box-shadow: 0px 0px 30px #ffffff;
+box-shadow: 0px 0px 30px #ffffff;
+}
+
 a:focus,
 button:focus {
 	outline: none !important;

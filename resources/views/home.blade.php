@@ -65,8 +65,75 @@
           </div>
         </section>
 
+        <!-- Featured Offers section -->
+        <section class="section ">
+          <div class="container">
+            <div class="row justify-content-center text-center">
+              <div class="col-md-9 col-lg-7 wow-outer">
+                <div class="wow slideInDown">
+                  <h2>Ofertas destacadas</h2>
+                  <p class="text-opacity-80">En Z vas a encontrar la mejor variedad de cortes, trae tu idea y hacela realidad !</p>
+                </div>
+              </div>
+            </div>
+            <div class="row row-20 row-lg-30">
+              <div class="col-md-6 col-lg-4 wow-outer">
+                <div class="wow fadeInUp">
+                  <div class="product-featured">
+                    <div class="product-featured-figure"><img src="images/product-1-370x395.jpg" alt="" width="370" height="395"/>
+                      <div class="product-featured-button"><a class="button button-primary" href="#">Pedi el tuyo!</a></div>
+                    </div>
+                    <div class="product-featured-caption">
+                      <h4><a class="product-featured-title" href="#">Z Premium</a></h4>
+
+                      <p class="big">$350</p>
+
+                      <span class="text-strike"> $ 400 </span>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 wow-outer">
+                <div class="wow fadeInUp">
+                  <div class="product-featured">
+                    <div class="product-featured-figure"><img src="images/product-2-370x395.jpg" alt="" width="370" height="395"/>
+                      <div class="product-featured-button"><a class="button button-primary" href="#">Pedi el tuyo!</a></div>
+                    </div>
+                    <div class="product-featured-caption">
+                      <h4><a class="product-featured-title" href="#">Barba</a></h4>
+                      
+                      <p class="big">$120</p>
+
+                      <span class="text-strike"> $ 150 </span>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 wow-outer">
+                <div class="wow fadeInUp">
+                  <div class="product-featured">
+                    <div class="product-featured-figure"><img src="images/product-3-370x395.jpg" alt="" width="370" height="395"/>
+                      <div class="product-featured-button"><a class="button button-primary" href="#">Pedi el tuyo!</a></div>
+                    </div>
+                    <div class="product-featured-caption">
+                      <h4><a class="product-featured-title" href="#">Clarito con corte</a></h4>
+                      
+                      <p class="big">$850</p>
+
+                      <span class="text-strike"> $ 1000 </span>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <!-- About Us section -->
-        <section class="section section-lg section-inset-1 bg-gray-1 pt-lg-0">
+        {{-- <section class="section section-lg section-inset-1 bg-gray-1 pt-lg-0">
           <div class="container">
             <div class="row row-50 justify-content-xl-between align-items-lg-center">
               <div class="col-lg-6 wow fadeInLeft">
@@ -80,66 +147,14 @@
               </div>
             </div>
           </div>
-        </section>
-      </div> <!-- Gray Background ends -->
+        </section> --}}
 
-      <!-- Featured Offers section -->
-      <section class="section section-lg bg-default">
-        <div class="container">
-          <div class="row justify-content-center text-center">
-            <div class="col-md-9 col-lg-7 wow-outer">
-              <div class="wow slideInDown">
-                <h2>Featured Offers</h2>
-                <p class="text-opacity-80">We offer a great variety of  the best Italian dishes to our visitors and guests. Below are some of our most popular main dishes and desserts.</p>
-              </div>
-            </div>
-          </div>
-          <div class="row row-20 row-lg-30">
-            <div class="col-md-6 col-lg-4 wow-outer">
-              <div class="wow fadeInUp">
-                <div class="product-featured">
-                  <div class="product-featured-figure"><img src="images/product-1-370x395.jpg" alt="" width="370" height="395"/>
-                    <div class="product-featured-button"><a class="button button-primary" href="#">order now</a></div>
-                  </div>
-                  <div class="product-featured-caption">
-                    <h4><a class="product-featured-title" href="#">Ravioli</a></h4>
-                    <p class="big">$8</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow-outer">
-              <div class="wow fadeInUp">
-                <div class="product-featured">
-                  <div class="product-featured-figure"><img src="images/product-2-370x395.jpg" alt="" width="370" height="395"/>
-                    <div class="product-featured-button"><a class="button button-primary" href="#">order now</a></div>
-                  </div>
-                  <div class="product-featured-caption">
-                    <h4><a class="product-featured-title" href="#">Black Pasta</a></h4>
-                    <p class="big">$13</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow-outer">
-              <div class="wow fadeInUp">
-                <div class="product-featured">
-                  <div class="product-featured-figure"><img src="images/product-3-370x395.jpg" alt="" width="370" height="395"/>
-                    <div class="product-featured-button"><a class="button button-primary" href="#">order now</a></div>
-                  </div>
-                  <div class="product-featured-caption">
-                    <h4><a class="product-featured-title" href="#">Gelato</a></h4>
-                    <p class="big">$4</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
+
+      
 
       <!-- Our Restaurant Menu section -->
-      <section class="section section-lg bg-gray-1">
+      {{-- <section class="section section-lg bg-gray-1">
         <div class="container">
           <h2 class="text-center">Our Restaurant Menu</h2>
           <div class="row">
@@ -252,8 +267,8 @@
             </div>
           </div>
         </div>
-      </section>
-
+      </section> --}}
+<br><br>
       <!-- Isotope gallery section -->
       <section class="section">
         <div class="row isotope-wrap">
@@ -302,8 +317,10 @@
         </div>
       </section>
 
+    </div> <!-- Gray Background ends -->
+
       <!-- Recent News section -->
-      <section class="section-lg bg-default">
+      {{-- <section class="section-lg bg-default">
         <div class="container wow-outer">
           <h2 class="text-center wow slideInDown">Recent News</h2>
           <!-- Owl Carousel-->
@@ -364,6 +381,6 @@
             </div>
           </div>
         </div>
-      </section> 
+      </section>  --}}
 
 @endsection
