@@ -105,7 +105,7 @@
               <ul class="social-list">
                 <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-facebook" href="https://www.facebook.com/z.estilistas" target="_blank" rel="noopener noreferrer"></a></li>
                 <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-instagram" href="https://www.instagram.com/z.estilistas/" target="_blank" rel="noopener noreferrer"></a></li>
-                <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-whatsapp" href="https://api.whatsapp.com/send?phone=+5492235997823" target="_blank" rel="noopener noreferrer"></a></li>
+                <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-whatsapp" href="https://api.whatsapp.com/send?phone=+5492235792912" target="_blank" rel="noopener noreferrer"></a></li>
                 {{-- <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-youtube-play" href="#"></a></li> --}}
                 {{-- <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-pinterest-p" href="#"></a></li> --}}
               </ul>
