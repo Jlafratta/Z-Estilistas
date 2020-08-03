@@ -17,13 +17,13 @@
     <link rel="apple-touch-icon" sizes="144x144" href="images/icon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="images/icon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="images/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/icon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/icon/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="images/icon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
 
@@ -59,7 +59,7 @@
                   <!-- RD Navbar Toggle-->
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!-- RD Navbar Brand-->
-                  <div class="rd-navbar-brand"><a href="{{ route('home') }}"><img class="brand-logo-light" src="images/logo-default1-140x57.png" alt="" width="140" height="57" srcset="images/logo-default-280x113.png 2x"/></a></div>
+                  <div class="rd-navbar-brand"><a href="{{ route('home') }}"><img class="brand-logo-light" src="images/1-70px.png" alt="" width="140" height="57" srcset="images/1-113px.png 2x"/></span></a></div>
                 </div>
                 <div class="rd-navbar-main-element">
                   <div class="rd-navbar-nav-wrap">
@@ -91,12 +91,12 @@
       <div class="container wow-outer">
         <div class="wow fadeIn">
           <div class="row row-60">
-            <div class="col-12"><a href="index.html"><img src="images/logo-default1-140x57.png" alt="" width="140" height="57" srcset="images/logo-default-280x113.png 2x"/></a></div>
+            <div class="col-12"><a href="{{ route('home') }}"><img src="images/logo-1.png" alt="" width="140" height="57" srcset="images/logo-default-280x113.png 2x"/></a></div>
             <div class="col-12">
               <ul class="footer-minimal-nav">
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="c{{ route('contact') }}">Contacts</a></li>
+                <li><a href="{{ route('contact') }}">Contacts</a></li>
                 <li><a href="{{ route('gallery') }}">Gallery</a></li>
                 <li><a href="{{ route('about-us') }}">About</a></li>
               </ul>
@@ -104,10 +104,8 @@
             <div class="col-12">
               <ul class="social-list">
                 <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-facebook" href="https://www.facebook.com/z.estilistas" target="_blank" rel="noopener noreferrer"></a></li>
-                <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-instagram" href="https://www.instagram.com/z.estilistas/"></a></li>
-                {{-- <li><a class="icon icon-sm icon-circle icon-circle-md icon-blue fa-facebook" href="https://www.facebook.com/z.estilistas"></a></li>
-                <li><a class="icon icon-sm icon-circle icon-circle-md icon-pink fa-instagram" href="https://www.instagram.com/z.estilistas/"></a></li> --}}
-                {{-- <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-twitter" href="#"></a></li> --}}
+                <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-instagram" href="https://www.instagram.com/z.estilistas/" target="_blank" rel="noopener noreferrer"></a></li>
+                <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-whatsapp" href="https://api.whatsapp.com/send?phone=+5492235792912" target="_blank" rel="noopener noreferrer"></a></li>
                 {{-- <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-youtube-play" href="#"></a></li> --}}
                 {{-- <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-pinterest-p" href="#"></a></li> --}}
               </ul>
