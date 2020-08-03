@@ -59,7 +59,7 @@
                   <!-- RD Navbar Toggle-->
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!-- RD Navbar Brand-->
-                  <div class="rd-navbar-brand"><a href="{{ route('home') }}"><img class="brand-logo-light" src="images/1-70px.png" alt="" width="140" height="57" srcset="images/logo-default-280x113.png 2x"/></a></div>
+                  <div class="rd-navbar-brand"><a href="{{ route('home') }}"><img class="brand-logo-light" src="images/1-70px.png" alt="" width="140" height="57" srcset="images/1-113px.png 2x"/></span></a></div>
                 </div>
                 <div class="rd-navbar-main-element">
                   <div class="rd-navbar-nav-wrap">

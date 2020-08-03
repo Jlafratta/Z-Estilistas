@@ -22,27 +22,29 @@
           <div class="container">
             <div class="box-booking">
               <form class="rd-form rd-mailform booking-form">
+
                 <div>
-                  <p class="booking-title">Name</p>
+                  <p class="booking-title"><span class="icon mdi mdi-account"></span><span class="icon mdi mdi-chevron-right"></span><a href="">Registrate</a></p>
                   <div class="form-wrap">
-                    <input class="form-input" id="booking-name" type="text" name="name" data-constraints="@Required">
-                    <label class="form-label" for="booking-name">Your name</label>
+                    <p>Descuentos unicos!</p>
                   </div>
                 </div>
+                
                 <div>
-                  <p class="booking-title">Phone</p>
+                  <p class="booking-title"><span class="icon mdi mdi-cart"></span><span class="icon mdi mdi-chevron-right"></span><a href="">Reserva tu turno</a></p>
                   <div class="form-wrap">
-                    <input class="form-input" id="booking-phone" type="text" name="phone" data-constraints="@Numeric">
-                    <label class="form-label" for="booking-phone">Your phone number</label>
+                    <p>En simples pasos</p>
                   </div>
                 </div>
-                <div>
-                  <p class="booking-title">Date</p>
-                  <div class="form-wrap form-wrap-icon"><span class="icon mdi mdi-calendar-text"></span>
-                    <input class="form-input" id="booking-date" type="text" name="date" data-constraints="@Required" data-time-picker="date">
+
+                {{-- <div>
+                  <p class="booking-title">test</p>
+                  <div class="form-wrap">
+                    <p>test</p>
                   </div>
-                </div>
-                <div>
+                </div> --}}
+                
+                {{-- <div>
                   <p class="booking-title">no. of people</p>
                   <div class="form-wrap">
                     <select data-placeholder="2">
@@ -55,11 +57,33 @@
                       <option>6</option>
                       <option>7</option>
                     </select>
+                  </div> 
+                </div> --}}
+
+                {{-- <div>
+                  <p class="booking-title">test</p>
+                  <div class="form-wrap form-wrap-icon"><span class="icon mdi mdi-calendar-text"></span>
+                    <p>test</p>
+                  </div>
+                </div> --}}
+                <div>
+                  <p class="booking-title"><span class="icon mdi mdi-calendar-text"></span><span class="icon mdi mdi-chevron-right"></span>Elegi el dia</p>
+                  <div class="form-wrap">
+                    <p>Y pasa por Z!</p>
                   </div>
                 </div>
+
                 <div>
-                  <button class="button button-lg button-gray-600" type="submit">Check availability</button>
+                  <p class="booking-title">Fecha</p>
+                  <div class="form-wrap">
+                    <input class="form-input" id="booking-date" type="text" name="date" data-constraints="@Required" data-time-picker="date">
+                  </div>
                 </div>
+                
+                <div>
+                  <button class="button button-lg button-gray-600" type="submit"> Buscar turno </button>
+                </div>
+
               </form>
             </div>
           </div>
@@ -269,7 +293,7 @@
         </div>
       </section> --}}
 <br><br>
-      <!-- Isotope gallery section -->
+      {{-- <!-- Isotope gallery section -->
       <section class="section">
         <div class="row isotope-wrap">
           <!-- Isotope Content-->
@@ -315,7 +339,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> --}}
 
     </div> <!-- Gray Background ends -->
 
