@@ -93,7 +93,7 @@
       <div class="container wow-outer">
         <div class="wow fadeIn">
           <div class="row row-60">
-            <div class="col-12"><a href="{{ route('home') }}"><img src="images/logo-1.png" alt="" width="140" height="57" srcset="images/logo-default-280x113.png 2x"/></a></div>
+            <div class="col-12"><a href="{{ route('home') }}"><img src="images/logo-1.png" alt="" width="140" height="57" srcset="images/logo-1.png 2x"/></a></div>
             <div class="col-12">
               <ul class="footer-minimal-nav">
                 <li><a href="#">Menu</a></li>
