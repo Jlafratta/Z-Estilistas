@@ -13,18 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () { 
-    return view('home', ['title' => 'Inicio']); 
+Route::get('/', function () {
+    return view('home', ['title' => 'Inicio']);
 })->name('home');
 
-Route::get('/about', function () { 
-    return view('about-us', ['title' => 'Quienes somos']); 
+Route::get('/about', function () {
+    return view('about-us', ['title' => 'Quienes somos']);
 })->name('about-us');
 
-Route::get('/gallery', function () { 
-    return view('gallery', ['title' => 'Galeria']); 
+Route::get('/gallery', function () {
+    return view('gallery', ['title' => 'Galeria']);
 })->name('gallery');
 
-Route::get('/contact', function () { 
-    return view('contact', ['title' => 'Contacto']); 
+Route::get('/contact', function () {
+    return view('contact', ['title' => 'Contacto']);
 })->name('contact');
+
+Route::get('/services', function () {
+    return view('services', ['title' => 'Servicios']);
+})->name('services');

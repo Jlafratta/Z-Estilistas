@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html class="wide wow-animation" lang="en"> 
+<html class="wide wow-animation" lang="en">
 
   <head>
     <title> {{ $title }} | Z </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     {{-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"> --}}
     <link rel="apple-touch-icon" sizes="57x57" href="images/icon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/icon/apple-icon-60x60.png">
@@ -35,7 +35,7 @@
   </head>
 
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
-    
+
     <!-- Loading preloader -->
     <div class="preloader">
       <div class="preloader-body">
@@ -55,7 +55,7 @@
             <div class="rd-navbar-main-outer">
               <div class="rd-navbar-main">
                 <!-- RD Navbar Panel-->
-                <div class="rd-navbar-panel"> 
+                <div class="rd-navbar-panel">
                   <!-- RD Navbar Toggle-->
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!-- RD Navbar Brand-->
@@ -68,6 +68,8 @@
                       <li class="rd-nav-item <?php if($title =='Inicio'){echo 'active';}?>"><a class="rd-nav-link transicion" href="{{ route('home') }}">Inicio</a>
                       </li>
                       <li class="rd-nav-item <?php if($title =='Quienes somos'){echo 'active';}?>"><a class="rd-nav-link transicion" href="{{ route('about-us') }}">Quienes somos</a>
+                      </li>
+                      <li class="rd-nav-item <?php if($title =='Servicios'){echo 'active';}?>"><a class="rd-nav-link transicion" href="{{ route('services') }}">Servicios</a>
                       </li>
                       <li class="rd-nav-item <?php if($title =='Galeria'){echo 'active';}?>"><a class="rd-nav-link transicion" href="{{ route('gallery') }}">Galeria</a>
                       </li>
@@ -123,21 +125,21 @@
   <script src="js/script.js"></script>
   <script>
   $(document).ready(function() {
-  
+
     $("body").css("display", "none");
     $("body").fadeIn(500);
-    
+
   $("a.transicion").click(function(event){
     event.preventDefault();
     linkDestino = this.href;
-    $("body").fadeOut(500, redireccionarPag);    
+    $("body").fadeOut(500, redireccionarPag);
   });
-    
+
   function redireccionarPag() {
     window.location = linkDestino;
   }
-  
+
   });</script>
-    
-  
+
+
 </html>
