@@ -6,7 +6,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-lg-9">
-            <h2 class="breadcrumbs-custom-title">Contacto</h2>
+            <h2 class="breadcrumbs-custom-title ">Contacto</h2>
             <ul class="breadcrumbs-custom-path">
               <li><a href="index.html">Inicio</a></li>
               <li class="active">Contacto</li>
@@ -23,8 +23,8 @@
           <div class="box-icon-classic">
             <div class="box-icon-inner decorate-triangle"><span class="icon-xl linearicons-phone-incoming"></span></div>
             <div class="box-icon-caption">
-              <h4><a href="tel:#">1-800-123-1234</a></h4>
-              <p>You can call us anytime</p>
+              <h4 class="heading-font font-family-base"><a href="tel:2235792912">2235792912</a></h4>
+              <p>Llamanos o comunicate por Whatsapp</p>
             </div>
           </div>
         </div>
@@ -32,7 +32,8 @@
           <div class="box-icon-classic">
             <div class="box-icon-inner decorate-circle"><span class="icon-xl linearicons-map2"></span></div>
             <div class="box-icon-caption">
-              <h4><a href="#">51 Francis Street, San Diego, CA 91702 United States</a></h4>
+              <h4 class="heading-font font-family-base"><a href="https://www.google.com.ar/maps/place/Z+Estilistas+y+Barberos/@-38.0323182,-57.5625399,17z/data=!3m1!4b1!4m5!3m4!1s0x9584df5c76a5794b:0xb65912d14a4e5662!8m2!3d-38.0323182!4d-57.5603512" target="_blank" rel="noopener noreferrer">
+                  12 de Octubre 4902 <br> Mar del Plata</a></h4>
             </div>
           </div>
         </div>
@@ -40,8 +41,8 @@
           <div class="box-icon-classic">
             <div class="box-icon-inner decorate-rectangle"><span class="icon-xl linearicons-paper-plane"></span></div>
             <div class="box-icon-caption">
-              <h4><a href="mailto:#">info@demolink.org</a></h4>
-              <p>Feel free to email us your questions</p>
+              <h4 class="heading-font font-family-base"><a href="mailto:#">zestilistas@gmail.com</a></h4>
+              <p>Comunicate via email</p>
             </div>
           </div>
         </div>
@@ -67,12 +68,12 @@
     <div class="container">
       <div class="row justify-content-md-center">
         <div class="col-md-9 col-lg-7">
-          <h3>Get in Touch</h3>
+          <h3 class="heading-font font-family-base">Contacto</h3>
           <!-- RD Mailform-->
           <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
             <div class="form-wrap">
               <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
-              <label class="form-label" for="contact-name">Your Name</label>
+              <label class="form-label" for="contact-name">Nombre</label>
             </div>
             <div class="form-wrap">
               <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
@@ -80,15 +81,15 @@
             </div>
             <div class="form-wrap">
               <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@Numeric">
-              <label class="form-label" for="contact-phone">Phone</label>
+              <label class="form-label" for="contact-phone">Celular</label>
             </div>
             <div class="form-wrap">
-              <label class="form-label" for="contact-message"> Message</label>
+              <label class="form-label" for="contact-message"> Mensaje</label>
               <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
             </div>
             <div class="row justify-content-center">
               <div class="col-12 col-sm-7 col-lg-5">
-                <button class="button button-block button-lg button-primary" type="submit">Send</button>
+                <button class="button button-block button-lg button-primary" type="submit">Enviar</button>
               </div>
             </div>
           </form>

@@ -188,7 +188,7 @@ h2.heading-font,
 .heading-2.heading-font {
 	font-weight: 400;
 	letter-spacing: -0.03em;
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 }
 
 h3,
@@ -3717,7 +3717,7 @@ textarea.form-input {
 }
 
 .booking-form .form-input {
-	padding: 6px 0;
+	padding: 0px 0;
 	min-height: 40px;
 	border-radius: 0;
 	border-color: transparent transparent #C4C4C4 transparent;
@@ -3867,7 +3867,7 @@ textarea.form-input {
 	}
 	.booking-form .form-label,
 	.booking-form .form-input {
-		font-size: 20px;
+		font-size: 15px;
 	}
 	.booking-form .form-wrap-icon .icon {
 		width: 40px;
@@ -5678,7 +5678,7 @@ html [class*='section-'].section-bottom-0 {
 
 @media (min-width: 992px) {
 	.section-transform-top {
-		transform: translateY(-50%);
+		transform: translateY(-80%);
 	}
 }
 
@@ -8221,13 +8221,13 @@ html.rd-navbar-fixed-linked .page {
 * =====================================================
 */
 .rd-navbar-classic.rd-navbar-static {
-	background: rgba(255, 255, 255, 0.11);
+	background: rgba(255, 255, 255, 0.0);
 }
 
 .rd-navbar-classic.rd-navbar-static .rd-navbar-aside-outer,
 .rd-navbar-classic.rd-navbar-static .rd-navbar-main-outer {
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 35px;
+	padding-right: 35px;
 }
 
 .rd-navbar-classic.rd-navbar-static .rd-navbar-aside,
@@ -8262,6 +8262,12 @@ html.rd-navbar-fixed-linked .page {
 	height: auto;
 	max-width: 200px;
 	max-height: 200px;
+	transition: 0.35s all cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.rd-navbar-classic.rd-navbar-static.rd-navbar--is-stuck .rd-navbar-brand img, .rd-navbar-classic.rd-navbar-static.rd-navbar--is-stuck.rd-navbar--is-clone .rd-navbar-brand img {
+	max-height: 85px;
+	transition: 0.35s all cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 .rd-navbar-classic.rd-navbar-static .rd-navbar-main-element {

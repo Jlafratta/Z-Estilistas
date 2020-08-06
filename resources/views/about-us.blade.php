@@ -19,23 +19,23 @@
       <section class="section section-lg bg-gray-1">
         <div class="container">
           <div class="row row-50">
-            <div class="col-lg-6 pr-xl-5"><img src="images/about-us-1-518x434.jpg" alt="" width="518" height="434"/>
+            <div class="col-lg-6 pr-xl-5"><img src="images/about-us-2-518x434.jpg" alt="" width="518" height="434"/>
             </div>
             <div class="col-lg-6">
-              <h2>About Our Restaurant</h2>
+              <h2 class="heading-font font-family-base">Historia Z</h2>
               <div class="text-with-divider">
                 <div class="divider"></div>
-                <h4>We offer the best Italian dishes in a friendly and calm atmosphere.</h4>
+                <h4 class="heading-font font-family-base">Deja que tu pelo hable por ti.</h4>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur</p>
+              <p>Z abrio sus puertas en el año 2019, con el concepto de dar al cliente una experiencia amigable y personal, de tener un trato de amistad con sus peluquero/as, para que se sientan comodos y tengan la mejor de sus expernecias en Z.</p>
+              <p>Sin dejar de lado el detalle, la perfeccion y alta capacitacion de cada uno de sus profesionales.</p>
             </div>
           </div>
         </div>
       </section>
       <section class="section section-lg bg-white">
         <div class="container">
-          <h2 class="text-center">Why People Choose Us</h2>
+          <h2 class="text-center heading-font font-family-base">Por que la gente nos elige</h2>
           <div class="row row-30 row-md-60">
             <div class="col-md-6 col-lg-4">
               <div class="box-icon-modern">
@@ -97,7 +97,7 @@
       <section class="parallax-container" data-parallax-img="images/parallax-img-4.jpg">
         <div class="parallax-content section-xl context-dark text-center bg-dark-filter bg-dark-filter-2">
           <div class="container">
-            <h2>Testimonials</h2>
+            <h2 class="heading-font font-family-base">La opinión de los clientes</h2>
             <!-- Slick Carousel-->
             <div class="slick-slider carousel-parent slick-style-1" data-arrows="true" data-loop="false" data-dots="false" data-swipe="true" data-items="1" data-child="#child-carousel" data-for="#child-carousel">
               <div class="item">
@@ -156,7 +156,7 @@
       </section>
       <section class="section section-lg bg-gray-1 text-center">
         <div class="container">
-          <h2>Our Awards</h2>
+          <h2 class="heading-font font-family-base">Nuestras certificaciones</h2>
           <div class="row row-30">
             <div class="col-6 col-md-3"><a class="clients-default" href="#"><img src="images/clients-1-270x119.png" alt="" width="270" height="119"/></a></div>
             <div class="col-6 col-md-3"><a class="clients-default" href="#"><img src="images/clients-2-270x119.png" alt="" width="270" height="119"/></a></div>

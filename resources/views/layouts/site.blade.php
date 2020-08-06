@@ -59,7 +59,7 @@
                   <!-- RD Navbar Toggle-->
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!-- RD Navbar Brand-->
-                  <div class="rd-navbar-brand"><a href="{{ route('home') }}"><img class="brand-logo-light" src="images/1-70px.png" alt="" width="140" height="57" srcset="images/1-113px.png 2x"/></span></a></div>
+                  <div class="rd-navbar-brand"><a href="{{ route('home') }}"><img class="brand-logo-light" src="images/1-70px.svg" alt="" width="140" height="57" srcset="images/1-113px.svg 2x"/></span></a></div>
                 </div>
                 <div class="rd-navbar-main-element">
                   <div class="rd-navbar-nav-wrap">
@@ -93,14 +93,19 @@
       <div class="container wow-outer">
         <div class="wow fadeIn">
           <div class="row row-60">
-            <div class="col-12"><a href="{{ route('home') }}"><img src="images/logo-1.png" alt="" width="140" height="57" srcset="images/logo-1.png 2x"/></a></div>
+            <div class="col-12"><a href="{{ route('home') }}"><img src="images/logo-1.svg" alt="" width="140" height="57" srcset="images/logo-1.svg 2x"/></a></div>
             <div class="col-12">
               <ul class="footer-minimal-nav">
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="{{ route('contact') }}">Contacts</a></li>
-                <li><a href="{{ route('gallery') }}">Gallery</a></li>
-                <li><a href="{{ route('about-us') }}">About</a></li>
+                <li class="rd-nav-item <?php if($title =='Inicio'){echo 'active';}?>"><a class="rd-nav-link transicion" href="{{ route('home') }}">Inicio</a>
+                </li>
+                <li class="rd-nav-item <?php if($title =='Quienes somos'){echo 'active';}?>"><a class="rd-nav-link transicion" href="{{ route('about-us') }}">Quienes somos</a>
+                </li>
+                <li class="rd-nav-item <?php if($title =='Servicios'){echo 'active';}?>"><a class="rd-nav-link transicion" href="{{ route('services') }}">Servicios</a>
+                </li>
+                <li class="rd-nav-item <?php if($title =='Galeria'){echo 'active';}?>"><a class="rd-nav-link transicion" href="{{ route('gallery') }}">Galeria</a>
+                </li>
+                <li class="rd-nav-item <?php if($title =='Contacto'){echo 'active';}?>"><a class="rd-nav-link transicion" href="{{ route('contact') }}">Contacto</a>
+                </li>
               </ul>
             </div>
             <div class="col-12">

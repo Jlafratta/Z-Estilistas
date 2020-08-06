@@ -281,7 +281,6 @@
                           </div>
                         </div>
                       </div>
-                      
                       <br>
                       <div class="card bg-light" > {{-- CARD WITH IMAGE --}}
                         <div class="row no-gutters">
