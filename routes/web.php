@@ -13,22 +13,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+/**
+ *  Site routes
+ */
+
 Route::get('/', function () {
-    return view('home', ['title' => 'Inicio']);
+    return view('site/home', ['title' => 'Inicio']);
 })->name('home');
 
 Route::get('/about', function () {
-    return view('about-us', ['title' => 'Quienes somos']);
+    return view('site/about-us', ['title' => 'Quienes somos']);
 })->name('about-us');
 
 Route::get('/gallery', function () {
-    return view('gallery', ['title' => 'Galeria']);
+    return view('site/gallery', ['title' => 'Galeria']);
 })->name('gallery');
 
 Route::get('/contact', function () {
-    return view('contact', ['title' => 'Contacto']);
+    return view('site/contact', ['title' => 'Contacto']);
 })->name('contact');
 
 Route::get('/services', function () {
-    return view('services', ['title' => 'Servicios']);
+    return view('site/services', ['title' => 'Servicios']);
 })->name('services');
+
