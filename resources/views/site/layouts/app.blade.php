@@ -42,7 +42,7 @@
         <div class="cssload-container">
           <div class="cssload-speeding-wheel"></div>
         </div>
-        <p>Cargando...</p>
+         <p>Cargando...</p> 
       </div>
     </div>
 
@@ -77,7 +77,7 @@
                       </li>
                     </ul>
                   </div>
-                </div><a class="button button-white button-sm" href="#">Ingresar</a>
+                </div><a class="button button-white button-sm" href="{{ route('login') }}">Ingresar</a>
               </div>
             </div>
           </nav>
@@ -94,7 +94,7 @@
         <div class="wow fadeIn">
           <div class="row row-60">
             <div class="col-12"><a href="{{ route('home') }}"><img src="{{ asset('site/images/logo-1.svg') }}" alt="" width="140" height="57" srcset="{{ asset('site/images/logo-1.svg') }} 2x"/></a></div>
-            <div class="col-12">
+            {{-- <div class="col-12">
               <ul class="footer-minimal-nav">
                 <li class="rd-nav-item <?php if($title =='Inicio'){echo 'active';}?>"><a class="rd-nav-link transicion" href="{{ route('home') }}">Inicio</a>
                 </li>
@@ -107,7 +107,7 @@
                 <li class="rd-nav-item <?php if($title =='Contacto'){echo 'active';}?>"><a class="rd-nav-link transicion" href="{{ route('contact') }}">Contacto</a>
                 </li>
               </ul>
-            </div>
+            </div> --}}
             <div class="col-12">
               <ul class="social-list">
                 <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-facebook" href="https://www.facebook.com/z.estilistas" target="_blank" rel="noopener noreferrer"></a></li>
@@ -128,7 +128,7 @@
   <div class="snackbars" id="form-output-global"></div>
   <script src="{{ asset('site/js/core.min.js') }}"></script>
   <script src="{{ asset('site/js/script.js') }}"></script>
-  <script>
+  {{-- <script>
   $(document).ready(function() {
 
     $("body").css("display", "none");
@@ -144,7 +144,7 @@
     window.location = linkDestino;
   }
 
-  });</script>
+  });</script> --}}
 
 
 </html>

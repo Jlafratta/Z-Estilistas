@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+define('SITE_PATH', 'site/');
+define('ADMIN_PATH', 'admin/');
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,22 +22,37 @@ use Illuminate\Support\Facades\Route;
  */
 
 Route::get('/', function () {
-    return view('site/home', ['title' => 'Inicio']);
+    return view(SITE_PATH.'home', ['title' => 'Inicio']);
 })->name('home');
 
 Route::get('/about', function () {
-    return view('site/about-us', ['title' => 'Quienes somos']);
+    return view(SITE_PATH.'about-us', ['title' => 'Quienes somos']);
 })->name('about-us');
 
 Route::get('/gallery', function () {
-    return view('site/gallery', ['title' => 'Galeria']);
+    return view(SITE_PATH.'gallery', ['title' => 'Galeria']);
 })->name('gallery');
 
 Route::get('/contact', function () {
-    return view('site/contact', ['title' => 'Contacto']);
+    return view(SITE_PATH.'contact', ['title' => 'Contacto']);
 })->name('contact');
 
 Route::get('/services', function () {
-    return view('site/services', ['title' => 'Servicios']);
+    return view(SITE_PATH.'services', ['title' => 'Servicios']);
 })->name('services');
 
+/**
+ * Login & Register
+ */
+
+Route::get('/login', function () {
+     return view(ADMIN_PATH.'login');
+ })->name('login');
+
+Route::get('/signup', function () {
+    return view(ADMIN_PATH.'signup');
+})->name('signup');
+
+Route::get('/signup-finish', function () {
+    return view(ADMIN_PATH.'signup-finish');
+})->name('signup-finish');
