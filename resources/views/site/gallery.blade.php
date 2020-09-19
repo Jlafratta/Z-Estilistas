@@ -1,4 +1,4 @@
-@extends('site.layouts.app')
+@extends('layouts.site')
 
 @section('body')
 

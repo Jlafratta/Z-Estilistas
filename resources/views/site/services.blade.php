@@ -1,4 +1,4 @@
-@extends('site.layouts.app')
+@extends('layouts.site')
 @section('body')
 
       <section class="parallax-container overlay-1" data-parallax-img="{{ asset('site/images/breadcrumbs4.jpg') }}">
@@ -8,7 +8,7 @@
               <div class="col-12 col-lg-9">
                 <h2 class="breadcrumbs-custom-title">Servicios</h2>
                 <ul class="breadcrumbs-custom-path">
-                  <li><a href="{{ route('home') }}">Inicio</a></li>
+                  <li><a href="{{ route('index') }}">Inicio</a></li>
                   <li class="active">Servicios</li>
                 </ul>
               </div>

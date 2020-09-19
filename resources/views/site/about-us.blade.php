@@ -1,4 +1,4 @@
-@extends('site.layouts.app')
+@extends('layouts.site')
 @section('body')
 
       <section class="parallax-container overlay-1" data-parallax-img="{{ asset('site/images/breadcrumbs2.jpg') }}">
@@ -8,7 +8,7 @@
               <div class="col-12 col-lg-9">
                 <h2 class="breadcrumbs-custom-title">Quienes somos</h2>
                 <ul class="breadcrumbs-custom-path">
-                  <li><a href="{{ route('home') }}">Inicio</a></li>
+                  <li><a href="{{ route('index') }}">Inicio</a></li>
                   <li class="active">Quienes somos</li>
                 </ul>
               </div>
@@ -39,19 +39,21 @@
           <div class="row row-30 row-md-60">
             <div class="col-md-6 col-lg-4">
               <div class="box-icon-modern">
-                <div class="box-icon-inner decorate-triangle"><span class="icon-xl restaurant-icon-30"></span></div>
+                <div class="box-icon-inner decorate-circle"><span class="icon-xl restaurant-icon-30"></span></div>
+                
                 <div class="box-icon-caption">
-                  <h4><a href="#">Friendly Team</a></h4>
-                  <p>Morbi tristique senectus et netus et malesuada fames ac turpis.</p>
+                  <h4><a href="#">Compañerismo</a></h4>
+                  <p>Somos muy buenos compañeros de trabajo, lo que hace que el ambiente del lugar sea amigable.</p>
                 </div>
               </div>
             </div>
             <div class="col-md-6 col-lg-4">
               <div class="box-icon-modern">
-                <div class="box-icon-inner decorate-circle"><span class="icon-xl restaurant-icon-11"></span></div>
+                <div class="box-icon-inner decorate-circle"><img src="site\fonts\icons\cup.svg" width="250px"></div>
                 <div class="box-icon-caption">
                   <h4><a href="#">Fresh Food</a></h4>
                   <p>Cum resistentia mori, omnes elevatuses imperium plac.</p>
+                  
                 </div>
               </div>
             </div>
@@ -59,8 +61,8 @@
               <div class="box-icon-modern">
                 <div class="box-icon-inner decorate-rectangle"><span class="icon-xl restaurant-icon-36"></span></div>
                 <div class="box-icon-caption">
-                  <h4><a href="#">Quality Cuisine</a></h4>
-                  <p>Cum consilium accelerare, omnes absolutioes quaestio fatalis.</p>
+                  <h4><a href="#">Sentite como en casa</a></h4>
+                  <p>Contamos con cafe, mate, facturas, caramelos, y una variedad increible de cosas mas para que la pases genial mientras esperas para que sea tu turno en Z! Ya que tu espera tambien es importante para nosotros.</p>
                 </div>
               </div>
             </div>
@@ -72,7 +74,7 @@
                   <p>Cum onus studere, omnes consiliumes amor plac.</p>
                 </div>
               </div>
-            </div>
+            </div> 
             <div class="col-md-6 col-lg-4">
               <div class="box-icon-modern">
                 <div class="box-icon-inner decorate-triangle"><span class="icon-xl restaurant-icon-34"></span></div>
@@ -84,10 +86,10 @@
             </div>
             <div class="col-md-6 col-lg-4">
               <div class="box-icon-modern">
-                <div class="box-icon-inner decorate-rectangle"><span class="icon-xl restaurant-icon-26"></span></div>
+                <div class="box-icon-inner decorate-triangle"><span class="icon-xl restaurant-icon-34"></span></div>
                 <div class="box-icon-caption">
-                  <h4><a href="#">Affordable Prices</a></h4>
-                  <p>Mirabilis, gratis devatios mechanice contactus de neuter, primus vigil.</p>
+                  <h4><a href="#">Gran calidad</a></h4>
+                  <p>Nuestros estilistas estan altamente capacitados para poder brindar el mejor serivicio y poder cumplir con cualquier idea y/o estilo de corte que el cliente deseé.</p>
                 </div>
               </div>
             </div>
@@ -154,7 +156,7 @@
           </div>
         </div>
       </section>
-      <section class="section section-lg bg-gray-1 text-center">
+      {{-- <section class="section section-lg bg-gray-1 text-center">
         <div class="container">
           <h2 class="heading-font font-family-base">Nuestras certificaciones</h2>
           <div class="row row-30">
@@ -164,6 +166,6 @@
             <div class="col-6 col-md-3"><a class="clients-default" href="#"><img src="{{ asset('site/images/clients-4-270x119.png') }}" alt="" width="270" height="119"/></a></div>
           </div>
         </div>
-      </section>
+      </section> --}}
 
 @endsection

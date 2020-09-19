@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 define('SITE_PATH', 'site/');
 define('ADMIN_PATH', 'admin/');
@@ -22,8 +23,8 @@ define('ADMIN_PATH', 'admin/');
  */
 
 Route::get('/', function () {
-    return view(SITE_PATH.'home', ['title' => 'Inicio']);
-})->name('home');
+    return view(SITE_PATH.'index', ['title' => 'Inicio']);
+})->name('index');
 
 Route::get('/about', function () {
     return view(SITE_PATH.'about-us', ['title' => 'Quienes somos']);
@@ -41,18 +42,17 @@ Route::get('/services', function () {
     return view(SITE_PATH.'services', ['title' => 'Servicios']);
 })->name('services');
 
+
+Auth::routes();
+
+Route::get('/admin/home', 'HomeController@index')->name('admin.home');
+
+
 /**
- * Login & Register
+ * Admin dashboard
  */
 
-Route::get('/login', function () {
-     return view(ADMIN_PATH.'login');
- })->name('login');
-
-Route::get('/signup', function () {
-    return view(ADMIN_PATH.'signup');
-})->name('signup');
-
-Route::get('/signup-finish', function () {
-    return view(ADMIN_PATH.'signup-finish');
-})->name('signup-finish');
+ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function(){
+    Route::resource('/users', 'UsersController');
+    Route::get('/users','UsersController@index')->name('users');
+ });

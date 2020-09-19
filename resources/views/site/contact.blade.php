@@ -1,4 +1,4 @@
-@extends('site.layouts.app')
+@extends('layouts.site')
 @section('body')
 
 <section class="parallax-container overlay-1" data-parallax-img="{{ asset('site/images/breadcrumbs3.jpg') }}" >
