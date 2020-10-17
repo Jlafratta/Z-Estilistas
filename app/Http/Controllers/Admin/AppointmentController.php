@@ -33,6 +33,13 @@ class AppointmentController extends Controller
             'appointments' => $appointments]);
     }
 
+    public function new()
+    {
+        $services = Product::orderBy('type_id', 'ASC')->where('type_id', '=', 1)->orWhere('type_id', '=', 2)->get();
+        return view('client.appointment.create')
+            ->with(['services' => $services]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *

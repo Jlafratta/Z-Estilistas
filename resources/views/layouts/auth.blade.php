@@ -32,7 +32,7 @@
   <link href="{{ asset('auth/css/bootstrap.min.css') }}" rel="stylesheet" />
   <link href="{{ asset('auth/css/now-ui-kit.css?v=1.3.0') }}" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
-  <!-- <link href="{{ asset('auth/demo/demo.css') }}" rel="stylesheet" /> -->
+  <link href="{{ asset('admin/css/custom.css') }}" rel="stylesheet" />
 </head>
 
 <body class="login-page sidebar-collapse">

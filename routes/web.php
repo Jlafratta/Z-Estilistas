@@ -56,7 +56,7 @@ Route::namespace('Admin')->prefix('dashboard')->middleware('can:adm-emp-gate')->
 
 Route::namespace('Admin')->prefix('client')->middleware('can:client-gate')->name('client.')->group(function(){
 
-    Route::get('/turnos', 'AppointmentController@new')->name('turnos.new');
+    Route::get('/turno', 'AppointmentController@new')->name('turnos.new');
 
 });
 
