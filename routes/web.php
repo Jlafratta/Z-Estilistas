@@ -3,9 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
-define('SITE_PATH', 'site/');
-define('ADMIN_PATH', 'admin/');
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,41 +15,50 @@ define('ADMIN_PATH', 'admin/');
 */
 
 
-/**
- *  Site routes
- */
-
-Route::get('/', function () {
-    return view(SITE_PATH.'index', ['title' => 'Inicio']);
-})->name('index');
-
-Route::get('/about', function () {
-    return view(SITE_PATH.'about-us', ['title' => 'Quienes somos']);
-})->name('about-us');
-
-Route::get('/gallery', function () {
-    return view(SITE_PATH.'gallery', ['title' => 'Galeria']);
-})->name('gallery');
-
-Route::get('/contact', function () {
-    return view(SITE_PATH.'contact', ['title' => 'Contacto']);
-})->name('contact');
-
-Route::get('/services', function () {
-    return view(SITE_PATH.'services', ['title' => 'Servicios']);
-})->name('services');
-
-
 Auth::routes();
 
-Route::get('/admin/home', 'HomeController@index')->name('admin.home');
+Route::get('login/{driver}', 'Auth\LoginController@redirectToProvider');
+Route::get('login/{driver}/callback', 'Auth\LoginController@handleProviderCallback');
 
+/** 
+* Site Routes 
+*/
+Route::get('/', 'HomeController@index')->name('index');
+Route::get('/about', 'HomeController@about')->name('about-us');
+Route::get('/gallery', 'HomeController@gallery')->name('gallery');
+Route::get('/contact', 'HomeController@contact')->name('contact');
+Route::get('/services', 'HomeController@services')->name('services');
 
 /**
- * Admin dashboard
- */
+* PHPMailer 
+*/
+Route::get('/sendMail', 'PhpmailerController@sendEmail')->name('sendMail');
 
- Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function(){
-    Route::resource('/users', 'UsersController');
-    Route::get('/users','UsersController@index')->name('users');
- });
+/** 
+* Dashboard Routes 
+*/
+Route::namespace('Admin')->prefix('dashboard')->middleware('can:adm-emp-gate')->name('admin.')->group(function(){
+
+    Route::resource('/turnos', 'AppointmentController');
+		Route::get('/daily', 'AppointmentController@daily')->name('turnos.daily');
+		Route::post('/turnos/nuevo', 'AppointmentController@chooseTime')->name('turnos.chooseTime');
+		Route::post('/turnos/transitorio', 'AppointmentController@chooseTimeTransit')->name('turnos.chooseTimeTransit');
+		Route::post('/turnos/finish/{id}', 'AppointmentController@finish')->name('turnos.finish');
+    	
+    Route::resource('/services', 'ProductController');
+	
+	Route::resource('/stock', 'ServiceController');
+
+    Route::resource('/users', 'UserController');
+    	Route::get('/employees', 'UserController@employees')->name('users.employees');
+    	Route::get('/clients', 'UserController@clients')->name('users.clients');
+});
+
+Route::namespace('Admin')->prefix('client')->middleware('can:client-gate')->name('client.')->group(function(){
+
+    Route::get('/turnos', 'AppointmentController@new')->name('turnos.new');
+
+});
+
+
+

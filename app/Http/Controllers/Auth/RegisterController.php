@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
-use App\User;
-use App\Role;
+use App\Models\User;
+use App\Models\Role;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -65,7 +65,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        $clientRole = Role::where('name', 'client')->first();   // Traigo el rol de client
+        $userRole = Role::where('name', 'Cliente')->first();
 
         $user = User::create([
             'name' => $data['name'],
@@ -74,8 +74,8 @@ class RegisterController extends Controller
             'phoneline' => $data['phoneline'],
         ]);
 
-        $user->roles()->attach($clientRole);    // Asigno el rol al nuevo usuario
-
+        $user->roles()->attach($userRole);
+        //$user->save();
         return $user;
     }
 }

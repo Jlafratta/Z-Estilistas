@@ -63,7 +63,8 @@
           </div>
         </section>
 
-        {{-- <!-- Featured Offers section -->
+        <!-- Featured Offers section -->
+        <!--
         <section class="section ">
           <div class="container">
             <div class="row justify-content-center text-center">
@@ -126,11 +127,12 @@
                   </div>
                 </div>
               </div>
+            
             </div>
           </div>
-        </section> --}}
+        </section> -->
 
-<br><br>
+        <br><br>
 
   </div> <!-- Gray Background ends -->
 

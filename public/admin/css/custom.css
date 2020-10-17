@@ -1,0 +1,16 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.icon-users {
+    font-size: 1.7rem;
+}
+
+.icon-snow {
+    font-size: 2.4rem;
+}
+
+.item-centered {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}

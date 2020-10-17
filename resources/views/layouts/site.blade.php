@@ -26,6 +26,7 @@
     <meta name="msapplication-TileImage" content="{{ asset('site/images/icon/ms-icon-144x144.png') }}">
     <meta name="theme-color" content="#ffffff">
 
+    <meta name="description" content="Z Estilistas Peluqueria Mar del Plata.">
 
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:300,300i,400,500,600,700,800,900,900i%7CPT+Serif:400,700">
     <link rel="stylesheet" href="{{ asset('site/css/bootstrap.css') }}">
@@ -36,99 +37,31 @@
 
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="{{ asset('site/images/ie8-panel/warning_bar_0000_us.jpg') }}" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
 
-    <!-- Loading preloader -->
-    <div class="preloader">
-      <div class="preloader-body">
-        <div class="cssload-container">
-          <div class="cssload-speeding-wheel"></div>
-        </div>
-         <p>Cargando...</p> 
+  <!-- Loading preloader -->
+  <div class="preloader">
+    <div class="preloader-body">
+      <div class="cssload-container">
+        <div class="cssload-speeding-wheel"></div>
       </div>
+       <p>Cargando...</p> 
     </div>
+  </div>
 
-    <div class="page">
+  <div class="page">
       <!-- Page Header-->
-      <header class="section page-header">
-        <!-- RD Navbar-->
-        <div class="rd-navbar-wrap">
-          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
-            <div class="rd-navbar-main-outer">
-              <div class="rd-navbar-main">
-                <!-- RD Navbar Panel-->
-                <div class="rd-navbar-panel">
-                  <!-- RD Navbar Toggle-->
-                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                  <!-- RD Navbar Brand-->
-                  <div class="rd-navbar-brand"><a href="{{ route('index') }}"><img class="brand-logo-light" src="{{ asset('site/images/1-70px.svg') }}" alt="" width="140" height="57" srcset="{{ asset('site/images/1-113px.svg') }} 2x"/></span></a></div>
-                </div>
-                <div class="rd-navbar-main-element">
-                  <div class="rd-navbar-nav-wrap">
-                    <!-- RD Navbar Nav-->
-                    <ul class="rd-navbar-nav">
-                      <li class="rd-nav-item <?php if($title =='Inicio'){echo 'active';}?>"><a class="rd-nav-link transicion" href="{{ route('index') }}">Inicio</a>
-                      </li>
-                      <li class="rd-nav-item <?php if($title =='Quienes somos'){echo 'active';}?>"><a class="rd-nav-link transicion" href="{{ route('about-us') }}">Quienes somos</a>
-                      </li>
-                      <li class="rd-nav-item <?php if($title =='Servicios'){echo 'active';}?>"><a class="rd-nav-link transicion" href="{{ route('services') }}">Servicios</a>
-                      </li>
-                      <li class="rd-nav-item <?php if($title =='Galeria'){echo 'active';}?>"><a class="rd-nav-link transicion" href="{{ route('gallery') }}">Galeria</a>
-                      </li>
-                      <li class="rd-nav-item <?php if($title =='Contacto'){echo 'active';}?>"><a class="rd-nav-link transicion" href="{{ route('contact') }}">Contacto</a>
-                      </li>
-                    </ul><a class="button button-white button-sm" href="{{ route('login') }}">Ingresar</a>
-                  </div>
-                </div><a class="button button-white button-sm" href="{{ route('login') }}">Ingresar</a>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </header>
+      @include('layouts.site.header')
 
-  <body>
-    @yield('body')
-  </body>
+    <body>
+      <!-- Page body -->
+      @yield('body')
 
-    <!-- Page Footer-->
-    <footer class="section footer-minimal context-dark">
-      <div class="container wow-outer">
-        <div class="wow fadeIn">
-          <div class="row row-60">
-            <div class="col-12"><a href="{{ route('index') }}"><img src="{{ asset('site/images/logo-1.svg') }}" alt="" width="140" height="57" srcset="{{ asset('site/images/logo-1.svg') }} 2x"/></a></div>
-            <div class="col-12">
-              <ul class="social-list">
-                <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-facebook" href="https://www.facebook.com/z.estilistas" target="_blank" rel="noopener noreferrer"></a></li>
-                <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-instagram" href="https://www.instagram.com/z.estilistas/" target="_blank" rel="noopener noreferrer"></a></li>
-                <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-whatsapp" href="https://api.whatsapp.com/send?phone=+5492235792912" target="_blank" rel="noopener noreferrer"></a></li>
-              </ul>
-            </div>
-          </div>
-          <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>Z Estilistas</span><span>.&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span><a href="#">Privacy Policy</a>.</p>
-        </div>
-      </div>
-    </footer>
+      <!-- Page Footer-->
+      @include('layouts.site.footer')
+
+      <div class="snackbars" id="form-output-global"></div>
+      <script src="{{ asset('site/js/core.min.js') }}"></script>
+      <script src="{{ asset('site/js/script.js') }}"></script>
+    </body>
 
   </div> <!-- page div end -->
-
-  <div class="snackbars" id="form-output-global"></div>
-  <script src="{{ asset('site/js/core.min.js') }}"></script>
-  <script src="{{ asset('site/js/script.js') }}"></script>
-  {{-- <script>
-  $(document).ready(function() {
-
-    $("body").css("display", "none");
-    $("body").fadeIn(500);
-
-  $("a.transicion").click(function(event){
-    event.preventDefault();
-    linkDestino = this.href;
-    $("body").fadeOut(500, redireccionarPag);
-  });
-
-  function redireccionarPag() {
-    window.location = linkDestino;
-  }
-
-  });</script> --}}
-
-
 </html>

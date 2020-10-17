@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\Auth;
+
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth');
     }
 
     /**
@@ -23,6 +23,31 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('admin.home', ['title' => 'Turnos', 'currentUser' => Auth::user()]);
+        return view('site.index')
+            ->with(['title' => 'Inicio']);
+    }
+
+    public function about()
+    {
+        return view('site.about-us')
+            ->with(['title' => 'Quienes somos']);
+    }
+
+    public function gallery()
+    {
+        return view('site.gallery')
+            ->with(['title' => 'Galeria']);
+    }
+
+    public function contact()
+    {
+        return view('site.contact')
+            ->with(['title' => 'Contacto']);
+    }
+
+    public function services()
+    {
+        return view('site.services')
+            ->with(['title' => 'Servicios']);
     }
 }

@@ -19,7 +19,8 @@
       <section class="section section-lg bg-gray-1">
         <div class="container">
           <div class="row row-50">
-            <div class="col-lg-6 pr-xl-5"><img src="{{ asset('site/images/about-us-2-518x434.jpg') }}" alt="" width="518" height="434"/>
+            <div class="col-lg-6 pr-xl-5">
+              <img src="{{ asset('site/images/about-us-2-518x434.jpg') }}" alt="" width="518" height="434"/>
             </div>
             <div class="col-lg-6">
               <h2 class="heading-font font-family-base">Historia Z</h2>
@@ -39,7 +40,7 @@
           <div class="row row-30 row-md-60">
             <div class="col-md-6 col-lg-4">
               <div class="box-icon-modern">
-                <div class="box-icon-inner decorate-circle"><span class="icon-xl restaurant-icon-30"></span></div>
+                <div class="box-icon-inner decorate-circle"><span class="icon-xl fa fa-handshake-o"></span></div>
                 
                 <div class="box-icon-caption">
                   <h4><a href="#">Compañerismo</a></h4>
@@ -49,24 +50,24 @@
             </div>
             <div class="col-md-6 col-lg-4">
               <div class="box-icon-modern">
-                <div class="box-icon-inner decorate-circle"><img src="site\fonts\icons\cup.svg" width="250px"></div>
+                <div class="box-icon-inner decorate-circle"><span class="icon-xl linearicons-checkmark-circle"></span></div>
                 <div class="box-icon-caption">
-                  <h4><a href="#">Fresh Food</a></h4>
-                  <p>Cum resistentia mori, omnes elevatuses imperium plac.</p>
+                  <h4><a href="#">Profesionales</a></h4>
+                  <p>Nuestros estilistas estan altamente capacitados para poder brindar el mejor serivicio y poder cumplir con cualquier idea y/o estilo de corte que el cliente deseé.</p>
                   
                 </div>
               </div>
             </div>
             <div class="col-md-6 col-lg-4">
               <div class="box-icon-modern">
-                <div class="box-icon-inner decorate-rectangle"><span class="icon-xl restaurant-icon-36"></span></div>
+                <div class="box-icon-inner decorate-rectangle"><span class="icon-xl linearicons-coffee-cup"></span></div>
                 <div class="box-icon-caption">
                   <h4><a href="#">Sentite como en casa</a></h4>
                   <p>Contamos con cafe, mate, facturas, caramelos, y una variedad increible de cosas mas para que la pases genial mientras esperas para que sea tu turno en Z! Ya que tu espera tambien es importante para nosotros.</p>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            {{-- <div class="col-md-6 col-lg-4">
               <div class="box-icon-modern">
                 <div class="box-icon-inner decorate-circle"><span class="icon-xl restaurant-icon-27"></span></div>
                 <div class="box-icon-caption">
@@ -92,11 +93,11 @@
                   <p>Nuestros estilistas estan altamente capacitados para poder brindar el mejor serivicio y poder cumplir con cualquier idea y/o estilo de corte que el cliente deseé.</p>
                 </div>
               </div>
-            </div>
+            </div> --}}
           </div>
         </div>
       </section>
-      <section class="parallax-container" data-parallax-img="{{ asset('site/images/parallax-img-4.jpg') }}">
+      {{-- <section class="parallax-container" data-parallax-img="{{ asset('site/images/parallax-img-4.jpg') }}">
         <div class="parallax-content section-xl context-dark text-center bg-dark-filter bg-dark-filter-2">
           <div class="container">
             <h2 class="heading-font font-family-base">La opinión de los clientes</h2>
@@ -155,7 +156,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> --}}
       {{-- <section class="section section-lg bg-gray-1 text-center">
         <div class="container">
           <h2 class="heading-font font-family-base">Nuestras certificaciones</h2>
