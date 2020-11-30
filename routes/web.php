@@ -17,6 +17,9 @@ use Illuminate\Support\Facades\Auth;
 
 Auth::routes();
 
+/**
+ * Social media Auth
+ */
 Route::get('login/{driver}', 'Auth\LoginController@redirectToProvider');
 Route::get('login/{driver}/callback', 'Auth\LoginController@handleProviderCallback');
 
@@ -54,6 +57,9 @@ Route::namespace('Admin')->prefix('dashboard')->middleware('can:adm-emp-gate')->
     	Route::get('/clients', 'UserController@clients')->name('users.clients');
 });
 
+/**
+ * Client Routes
+ */
 Route::namespace('Admin')->prefix('client')->middleware('can:client-gate')->name('client.')->group(function(){
 
     Route::get('/turno', 'AppointmentController@new')->name('turnos.new');
