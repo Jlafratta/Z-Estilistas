@@ -161,7 +161,6 @@ class AppointmentController extends Controller
         
         $appoint = Appointment::createAndSave($price, $date, $clientId, $clientName, $services);
         
-        // FALTA RETURN
         return $this->show($appoint);
     }
 
@@ -173,6 +172,7 @@ class AppointmentController extends Controller
      */
     public function show(Appointment $appointment)
     {
+        // Casteo para el front
         $appointment->date = date('d/m/Y - h:i', strtotime($appointment->date));
         return view('admin.appointment.show')
         ->with(['title' => 'Turno creado | Z',
@@ -188,7 +188,7 @@ class AppointmentController extends Controller
     public function edit( $id)
     {
         $appointment = Appointment::where('id', $id)->first();
-        return view('admin.appointment.edit')->with(['title' => 'Turno creado | Z','appointment' => $appointment]);
+        return view('admin.appointment.edit')->with(['title' => 'Modificar turno | Z','appointment' => $appointment]);
     }
 
     /**
@@ -211,7 +211,7 @@ class AppointmentController extends Controller
      */
     public function destroy(Appointment $appointment)
     {
-        return "asdasd";
+        return "WIP";
     }
 
     public function finish($id)
